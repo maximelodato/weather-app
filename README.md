@@ -1,101 +1,81 @@
-🌦 Weather Forecast Application
-Une application moderne et réactive permettant de consulter les prévisions météorologiques sur 5 jours pour différentes villes à travers le monde. Cette application a été conçue pour aider une association qui organise des événements en plein air à mieux gérer les conditions climatiques.
+Application Météo
+Bienvenue sur l'Application Météo ! Ce projet vous permet de consulter les prévisions météorologiques en temps réel pour n'importe quelle ville, avec des détails précis sur les 5 prochains jours, des prévisions horaires, ainsi que des graphiques interactifs sur les différents paramètres météorologiques.
 
-🎯 Fonctionnalités
-Recherche de villes avec autocomplétion : L'utilisateur peut rechercher une ville dans une barre de recherche. À partir de 3 lettres, des suggestions sont affichées.
-Prévisions sur 5 jours : Après avoir sélectionné une ville, l'utilisateur peut voir les prévisions météo sur 5 jours.
-Prévisions horaires : Chaque jour présente également un lien vers les prévisions horaires détaillées.
-Informations météorologiques : Température actuelle, humidité, vitesse du vent, pression atmosphérique, lever et coucher du soleil, etc.
-Images de conditions météo : Des icônes et des images spécifiques sont affichées pour illustrer les conditions météorologiques (soleil, pluie, nuages...).
-Villes récentes : L'application sauvegarde les 5 dernières villes recherchées dans le localStorage.
-Mise à jour automatique : La météo est actualisée automatiquement toutes les 5 minutes.
-🚀 Technologies Utilisées
-React.js : Framework JavaScript pour créer l'interface utilisateur.
-React Router : Gestion du routage pour naviguer entre les différentes pages de l'application.
-Material-UI (MUI) : Bibliothèque de composants pour un design moderne et réactif.
-Framer Motion : Ajout d'animations et d'effets sur les cartes et les composants.
-API OpenWeatherMap : Source des données météorologiques.
-LocalStorage : Pour stocker les villes récemment recherchées.
+Ce guide vous aidera à comprendre les fonctionnalités de l'application, comment l'installer et l'utiliser.
 
+Table des matières
+Fonctionnalités
+Installation
+Utilisation
+Technologies utilisées
+Structure du projet
+Licence
+Fonctionnalités
+Données météorologiques en temps réel : Consultez les informations météorologiques actuelles pour n'importe quelle ville, incluant la température, l'humidité, la vitesse du vent, et bien plus.
+Prévisions sur 5 jours : Visualisez des prévisions détaillées pour les 5 prochains jours, avec des informations sur les conditions météo journalières et les températures.
+Prévisions horaires : Découvrez les prévisions horaires précises pour les 8 heures à venir.
+Graphiques interactifs : Visualisez les tendances de température, d'humidité et de vitesse du vent grâce à des graphiques dynamiques.
+Recherche de ville avec autocomplétion : Recherchez des villes grâce à une barre de recherche avec des suggestions dès que vous saisissez 3 lettres.
+Recherches récentes : Retrouvez les 5 dernières villes recherchées, enregistrées dans le localStorage de votre navigateur.
+Design réactif : L'application est entièrement responsive et fonctionne sur tous types d'appareils, du mobile au bureau.
+Icônes météo : Chaque prévision est accompagnée d'icônes explicites pour une interprétation facile des conditions météo.
+Installation
+Pour installer le projet localement, suivez ces étapes :
 
-Voici un modèle de README complet et bien structuré pour votre application météo. Ce document inclut des sections détaillées sur l’installation, les fonctionnalités, les technologies utilisées, et plus encore.
-
-🌦 Weather Forecast Application
-Une application moderne et réactive permettant de consulter les prévisions météorologiques sur 5 jours pour différentes villes à travers le monde. Cette application a été conçue pour aider une association qui organise des événements en plein air à mieux gérer les conditions climatiques.
-
-🎯 Fonctionnalités
-Recherche de villes avec autocomplétion : L'utilisateur peut rechercher une ville dans une barre de recherche. À partir de 3 lettres, des suggestions sont affichées.
-Prévisions sur 5 jours : Après avoir sélectionné une ville, l'utilisateur peut voir les prévisions météo sur 5 jours.
-Prévisions horaires : Chaque jour présente également un lien vers les prévisions horaires détaillées.
-Informations météorologiques : Température actuelle, humidité, vitesse du vent, pression atmosphérique, lever et coucher du soleil, etc.
-Images de conditions météo : Des icônes et des images spécifiques sont affichées pour illustrer les conditions météorologiques (soleil, pluie, nuages...).
-Villes récentes : L'application sauvegarde les 5 dernières villes recherchées dans le localStorage.
-Mise à jour automatique : La météo est actualisée automatiquement toutes les 5 minutes.
-🚀 Technologies Utilisées
-React.js : Framework JavaScript pour créer l'interface utilisateur.
-React Router : Gestion du routage pour naviguer entre les différentes pages de l'application.
-Material-UI (MUI) : Bibliothèque de composants pour un design moderne et réactif.
-Framer Motion : Ajout d'animations et d'effets sur les cartes et les composants.
-API OpenWeatherMap : Source des données météorologiques.
-LocalStorage : Pour stocker les villes récemment recherchées.
-📸 Captures d'écran
-Home Page	Page City	Page Forecast
-🛠️ Installation et Lancement du Projet
-Prérequis
-Node.js (version 14 ou supérieure)
-npm (version 6 ou supérieure) ou yarn
-Étapes d'installation
-Cloner le dépôt :
-
+Cloner le dépôt Git :
 bash
 Copier le code
-git clone https://github.com/votre-nom-utilisateur/weather-app.git
-Naviguer dans le dossier du projet :
-
-bash
-Copier le code
+git clone https://github.com/votreusername/weather-app.git
 cd weather-app
 Installer les dépendances :
-
-Avec npm :
-
 bash
 Copier le code
 npm install
-Avec yarn :
-
+Configurer la clé API :
+Créez un fichier .env à la racine du projet.
+Ajoutez votre clé API de OpenWeatherMap comme ceci :
 bash
 Copier le code
-yarn install
-Ajouter votre clé API OpenWeatherMap :
-
-Créez un fichier .env à la racine du dossier src/.
-Ajoutez votre clé API comme ceci :
-makefile
-Copier le code
-REACT_APP_WEATHER_API_KEY=VOTRE_CLE_API
-Vous pouvez obtenir une clé API gratuite en vous inscrivant sur OpenWeatherMap.
-
-Lancer l'application :
-
-Avec npm :
-
+REACT_APP_WEATHER_API_KEY=votre_clé_api
+Lancer le serveur de développement :
 bash
 Copier le code
 npm start
-Avec yarn :
+L'application sera maintenant accessible à l'adresse http://localhost:3000/.
 
-bash
-Copier le code
-yarn start
-Accéder à l'application : Ouvrez votre navigateur et accédez à l'URL suivante :
+Utilisation
+Accueil
+Lorsque vous arrivez sur la page d'accueil de l'application, vous verrez un champ de recherche où vous pouvez entrer le nom d'une ville. Dès que vous tapez au moins 3 lettres, l'application vous suggérera des villes correspondant à votre saisie. Vous pouvez sélectionner une ville pour afficher ses prévisions météorologiques détaillées.
 
-arduino
-Copier le code
-http://localhost:3000
-📚 Utilisation
-Sur la page d'accueil, utilisez la barre de recherche pour rechercher une ville.
-Sélectionnez la ville souhaitée parmi les suggestions proposées.
-Visualisez les prévisions météo sur 5 jours avec des détails sur la température, l'humidité, la pression, etc.
-Cliquez sur un jour pour voir les prévisions horaires détaillées.
-Les 5 dernières villes consultées apparaissent sous la barre de recherche pour un accès rapide.
+Détails des villes
+Sur la page de chaque ville, vous verrez :
+
+La météo actuelle (température, humidité, pression, vitesse du vent, lever et coucher du soleil).
+Un graphique interactif montrant les températures maximales et minimales sur 5 jours.
+Les prévisions pour les 5 prochains jours avec des cartes météo illustrées.
+Les prévisions horaires pour les 8 heures à venir.
+Technologies utilisées
+React : Framework JavaScript utilisé pour construire l'interface utilisateur.
+React Router : Utilisé pour gérer la navigation entre les différentes pages (home, city, forecast).
+OpenWeatherMap API : Fournit les données météorologiques en temps réel et les prévisions.
+Material-UI (MUI) : Utilisé pour le style des composants et l'interface utilisateur réactive.
+VisX : Utilisé pour créer des graphiques interactifs représentant les données météo (température, humidité, vent).
+Structure du projet
+Voici un aperçu de la structure des fichiers du projet :
+
+
+
+/src
+  /components
+    City.js              // Composant pour afficher les prévisions météo d'une ville
+    TemperatureChart.js   // Composant pour afficher le graphique des températures
+    HumidityChart.js      // Composant pour afficher le graphique d'humidité
+    WindSpeedChart.js     // Composant pour afficher le graphique de la vitesse du vent
+    /styles
+      App.css             // Styles globaux de l'application
+      City.css            // Styles spécifiques au composant City
+      TemperatureChart.css // Styles pour le graphique des températures
+      HumidityChart.css   // Styles pour le graphique d'humidité
+      WindSpeedChart.css  // Styles pour le graphique de vitesse du vent
+  App.js                 // Point d'entrée de l'application
+  index.js               // Fichier principal pour le rendu React
