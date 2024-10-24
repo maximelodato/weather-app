@@ -1,0 +1,18 @@
+/* src/components/styles/HumidityChart.css */
+
+.chart-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.grid-line {
+  stroke: #ddd;
+}
+
+.line-path {
+  stroke: #3498db;
+  stroke-width: 3;
+}

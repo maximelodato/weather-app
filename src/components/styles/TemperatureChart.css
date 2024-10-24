@@ -1,0 +1,26 @@
+/* src/components/styles/TemperatureChart.css */
+
+/* Chart container */
+.chart-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Axis styles */
+.axis path, .axis line {
+  stroke: #333;
+}
+
+.axis text {
+  fill: #333;
+  font-size: 12px;
+}
+
+/* Line styles */
+.line-path {
+  stroke: #e67e22;
+  stroke-width: 3;
+}
