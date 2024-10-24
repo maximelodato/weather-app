@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+🌦 Weather Forecast Application
+Une application moderne et réactive permettant de consulter les prévisions météorologiques sur 5 jours pour différentes villes à travers le monde. Cette application a été conçue pour aider une association qui organise des événements en plein air à mieux gérer les conditions climatiques.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🎯 Fonctionnalités
+Recherche de villes avec autocomplétion : L'utilisateur peut rechercher une ville dans une barre de recherche. À partir de 3 lettres, des suggestions sont affichées.
+Prévisions sur 5 jours : Après avoir sélectionné une ville, l'utilisateur peut voir les prévisions météo sur 5 jours.
+Prévisions horaires : Chaque jour présente également un lien vers les prévisions horaires détaillées.
+Informations météorologiques : Température actuelle, humidité, vitesse du vent, pression atmosphérique, lever et coucher du soleil, etc.
+Images de conditions météo : Des icônes et des images spécifiques sont affichées pour illustrer les conditions météorologiques (soleil, pluie, nuages...).
+Villes récentes : L'application sauvegarde les 5 dernières villes recherchées dans le localStorage.
+Mise à jour automatique : La météo est actualisée automatiquement toutes les 5 minutes.
+🚀 Technologies Utilisées
+React.js : Framework JavaScript pour créer l'interface utilisateur.
+React Router : Gestion du routage pour naviguer entre les différentes pages de l'application.
+Material-UI (MUI) : Bibliothèque de composants pour un design moderne et réactif.
+Framer Motion : Ajout d'animations et d'effets sur les cartes et les composants.
+API OpenWeatherMap : Source des données météorologiques.
+LocalStorage : Pour stocker les villes récemment recherchées.
 
-## Available Scripts
 
-In the project directory, you can run:
+Voici un modèle de README complet et bien structuré pour votre application météo. Ce document inclut des sections détaillées sur l’installation, les fonctionnalités, les technologies utilisées, et plus encore.
 
-### `npm start`
+🌦 Weather Forecast Application
+Une application moderne et réactive permettant de consulter les prévisions météorologiques sur 5 jours pour différentes villes à travers le monde. Cette application a été conçue pour aider une association qui organise des événements en plein air à mieux gérer les conditions climatiques.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎯 Fonctionnalités
+Recherche de villes avec autocomplétion : L'utilisateur peut rechercher une ville dans une barre de recherche. À partir de 3 lettres, des suggestions sont affichées.
+Prévisions sur 5 jours : Après avoir sélectionné une ville, l'utilisateur peut voir les prévisions météo sur 5 jours.
+Prévisions horaires : Chaque jour présente également un lien vers les prévisions horaires détaillées.
+Informations météorologiques : Température actuelle, humidité, vitesse du vent, pression atmosphérique, lever et coucher du soleil, etc.
+Images de conditions météo : Des icônes et des images spécifiques sont affichées pour illustrer les conditions météorologiques (soleil, pluie, nuages...).
+Villes récentes : L'application sauvegarde les 5 dernières villes recherchées dans le localStorage.
+Mise à jour automatique : La météo est actualisée automatiquement toutes les 5 minutes.
+🚀 Technologies Utilisées
+React.js : Framework JavaScript pour créer l'interface utilisateur.
+React Router : Gestion du routage pour naviguer entre les différentes pages de l'application.
+Material-UI (MUI) : Bibliothèque de composants pour un design moderne et réactif.
+Framer Motion : Ajout d'animations et d'effets sur les cartes et les composants.
+API OpenWeatherMap : Source des données météorologiques.
+LocalStorage : Pour stocker les villes récemment recherchées.
+📸 Captures d'écran
+Home Page	Page City	Page Forecast
+🛠️ Installation et Lancement du Projet
+Prérequis
+Node.js (version 14 ou supérieure)
+npm (version 6 ou supérieure) ou yarn
+Étapes d'installation
+Cloner le dépôt :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copier le code
+git clone https://github.com/votre-nom-utilisateur/weather-app.git
+Naviguer dans le dossier du projet :
 
-### `npm test`
+bash
+Copier le code
+cd weather-app
+Installer les dépendances :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Avec npm :
 
-### `npm run build`
+bash
+Copier le code
+npm install
+Avec yarn :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copier le code
+yarn install
+Ajouter votre clé API OpenWeatherMap :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Créez un fichier .env à la racine du dossier src/.
+Ajoutez votre clé API comme ceci :
+makefile
+Copier le code
+REACT_APP_WEATHER_API_KEY=VOTRE_CLE_API
+Vous pouvez obtenir une clé API gratuite en vous inscrivant sur OpenWeatherMap.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lancer l'application :
 
-### `npm run eject`
+Avec npm :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copier le code
+npm start
+Avec yarn :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copier le code
+yarn start
+Accéder à l'application : Ouvrez votre navigateur et accédez à l'URL suivante :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+arduino
+Copier le code
+http://localhost:3000
+📚 Utilisation
+Sur la page d'accueil, utilisez la barre de recherche pour rechercher une ville.
+Sélectionnez la ville souhaitée parmi les suggestions proposées.
+Visualisez les prévisions météo sur 5 jours avec des détails sur la température, l'humidité, la pression, etc.
+Cliquez sur un jour pour voir les prévisions horaires détaillées.
+Les 5 dernières villes consultées apparaissent sous la barre de recherche pour un accès rapide.

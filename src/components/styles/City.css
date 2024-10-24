@@ -1,0 +1,41 @@
+/* src/styles/City.css */
+
+.city-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .daily-forecast ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .forecast-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .forecast-item img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .forecast-item p {
+    margin: 5px 0;
+  }
+  
+  .forecast-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
